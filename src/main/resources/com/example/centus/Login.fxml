@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="380.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.centus.rejestrajailogin">
+   <children>
+      <Button fx:id="zarejestruj" layoutX="69.0" layoutY="404.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: TRANSPARENT;" text="albo Zarejestruj nowy profil" textFill="#aaadae">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Text fill="#43bb73" layoutX="129.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Centuś" wrappingWidth="121.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="zaloguj" layoutY="474.0" mnemonicParsing="false" onAction="#logIn" prefHeight="51.0" prefWidth="380.0" style="-fx-background-color: #43bb73;" text="Zaloguj się " textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="32.0" layoutY="193.0" prefHeight="80.0" prefWidth="309.0" style="-fx-background-color: #aaadae;">
+         <children>
+            <TextField fx:id="textField" layoutX="2.0" layoutY="3.0" prefHeight="74.0" prefWidth="305.0" promptText="Nazwa Użytkownika" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="32.0" layoutY="286.0" prefHeight="80.0" prefWidth="309.0" style="-fx-background-color: #aaadae;">
+         <children>
+            <PasswordField fx:id="passwordField" layoutX="2.0" layoutY="3.0" prefHeight="74.0" prefWidth="305.0" promptText="Podaj Hasło" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="96.0" fitWidth="129.0" layoutX="139.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\User\Desktop\Centus\src\main\resources\icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="80.0" layoutY="380.0" prefHeight="24.0" prefWidth="261.0" textFill="#ff3333">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="48.0" text="RafWoj" textFill="#aaadae" />
+   </children>
+</AnchorPane>
